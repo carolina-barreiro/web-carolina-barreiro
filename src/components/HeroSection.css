@@ -21,7 +21,7 @@ p {
 }
 
 .btn-custom {
-    width: 6.5em;
+    width: 7em;
     height: 2.3em;
     margin: 0.5em;
     background: black;
@@ -62,9 +62,23 @@ p {
     transition: all 0.5s;
 }
 
+.btn-custom.font-light {
+    font-family: 'GothamBook';
+  }
+
 .hero-image {
     max-width: '100%';
     max-height: auto;
     max-width: 100%;
     max-height: 100%;
 }
+
+.svg-shape {
+    position: absolute;
+    top: 2;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    z-index: -1;
+  }
+  

@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "GothamBook";
+    src: local("GothamBook"), 
+    url("./fonts/Gotham/GothamBook.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face{
+    font-family: "GothamMedium";
+    src: local("GothamMedium"), 
+    url("./fonts/Gotham/GothamMedium.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.font-medium{
+    font-family: "GothamMedium";
+}
+
+.font-light{
+    font-family: "GothamBook";
+}

@@ -14,7 +14,7 @@ function Projects() {
         <Container fluid="md">
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
-                    <h2>Projetos</h2>
+                    <h2 className="font-medium">PROJETOS</h2>
                     <br />
                 </Col>
             </Row>
@@ -25,7 +25,7 @@ function Projects() {
                             <Card.Img variant="top" class="image-card" src={project.srcImage} />
                             <Card.Body>
                                 <div id="card-line">
-                                    <Card.Title>{project.title}</Card.Title>
+                                    <Card.Title className="font-medium">{project.title}</Card.Title>
                                     <Button
                                         href={project.urlGit}
                                         target="_blank"
@@ -35,9 +35,9 @@ function Projects() {
                                         <Github className="align-top" />
                                     </Button>
                                 </div>
-                                <Card.Text>{project.description}</Card.Text>
+                                <Card.Text className="font-light">{project.description}</Card.Text>
                                 <div id="card-line">
-                                    <Card.Text>
+                                    <Card.Text className="font-medium">
                                         {project.technologies.map((technology, techIdx) => (
                                             <span key={techIdx}><b>
                                                 {technology.tech}
