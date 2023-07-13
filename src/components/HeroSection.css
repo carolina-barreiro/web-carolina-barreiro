@@ -1,0 +1,70 @@
+#landingPage {
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+.content-wrapper {
+    margin-top: 200px;
+    /* Adjust this value to position the content below the center */
+}
+
+p {
+    text-align: justify;
+}
+
+#column1{
+    margin-right: '100px' important;
+}
+
+#column2{
+    margin-left: '100px'important;
+}
+
+.btn-custom {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-custom:hover {
+    background: black !important;
+    outline: none;
+    color: black;
+}
+
+.btn-custom::after {
+    content: "";
+    background: white;
+    color: black;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.btn-custom:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.hero-image {
+    max-width: '100%';
+    max-height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}

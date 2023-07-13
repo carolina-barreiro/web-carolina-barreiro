@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import CollapsibleExample from './components/Navbar';
+import NavbarTop from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
+  const [noturnView, setNoturnView] = useState(false);
+
   return (
     <>
       <Router>
-        <CollapsibleExample />
+        <NavbarTop
+          noturnView={noturnView}
+          setNoturnView={setNoturnView} />
+        <HeroSection />
+        <Projects/>
+        <Footer/>
         <Routes>
-          <Route path='/' exact/>
+          <Route path='/' exact />
         </Routes>
       </Router>
     </>
