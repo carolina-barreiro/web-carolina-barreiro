@@ -22,7 +22,9 @@ function Projects() {
                 {projectsData.map((project, idx) => (
                     <Col key={idx}>
                         <Card>
-                            <Card.Img variant="top" class="image-card" src={project.srcImage} />
+                            <div className="card-image-overlay">
+                                <Card.Img variant="top" className="image-card" src={project.srcImage} />
+                            </div>
                             <Card.Body>
                                 <div id="card-line">
                                     <Card.Title className="font-medium">{project.title}</Card.Title>
@@ -45,7 +47,7 @@ function Projects() {
                                             </b></span>
                                         ))}
                                     </Card.Text>
-                                    <Button href="#" className="cta" > <span>Launch</span>
+                                    <Button href="#" className="cta " > <span>Launch</span>
                                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                                             <path d="M1,5 L11,5"></path>
                                             <polyline points="8 1 12 5 8 9"></polyline>

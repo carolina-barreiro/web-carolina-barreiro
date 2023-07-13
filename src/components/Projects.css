@@ -114,3 +114,34 @@
 .image-card {
     background: #ea9b3a;
 }
+.card-image-overlay {
+    position: relative;
+    overflow: hidden; /* Ensure the overflow is hidden to hide the fade effect */
+  }
+  
+  .card-image-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3)); /* Adjust the gradient direction and color as needed */
+    pointer-events: none; /* Ensures that the overlay doesn't interfere with clicking on the image */
+    opacity: 0; /* Initially hide the fade effect */
+    transition: opacity 0.5s ease-in-out; /* Adding transition for smooth fade animation */
+  }
+  
+  .card-image-overlay:hover::after {
+    opacity: 1; /* Show the fade effect on hover */
+  }
+  
+  .card-image-overlay img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out; /* Adding transition for smooth grayscale animation */
+  }
+  
+  .card-image-overlay:hover img {
+    filter: grayscale(0%); /* Reverting back to original color on hover */
+  }
+  
