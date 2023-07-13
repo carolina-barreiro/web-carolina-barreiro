@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CollapsibleExample from './components/Navbar';
 
 function App() {
@@ -8,9 +8,9 @@ function App() {
     <>
       <Router>
         <CollapsibleExample />
-        <Switch>
+        <Routes>
           <Route path='/' exact/>
-        </Switch>
+        </Routes>
       </Router>
     </>
   );
