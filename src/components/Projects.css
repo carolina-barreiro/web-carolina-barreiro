@@ -13,7 +13,7 @@
     margin-left: auto;
 }
 
-.btn-github{
+.btn-github {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -22,29 +22,42 @@
     text-decoration: none;
     transition: none;
     font-size: 1.5em;
-  }
-  
-  .btn-github:hover {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    box-shadow: none;
-    color: inherit;
-    text-decoration: none;
-    transition: none;
-    font-size: 1.5em;
-  }
+    background: none;
+}
 
-  .cta {
+.btn-github:hover {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    color: inherit;
+    text-decoration: none;
+    transition: none;
+    font-size: 1.5em;
+}
+
+.btn-github:focus {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    color: inherit;
+    text-decoration: none;
+    transition: none;
+    font-size: 1.5em;
+    background: none;
+}
+
+.cta {
     position: relative;
     margin: auto;
     padding: 12px 18px;
     transition: all 0.2s ease;
     border: none;
     background: none;
-   }
-   
-   .cta:before {
+}
+
+.cta:before {
     content: "";
     position: absolute;
     top: 0;
@@ -55,48 +68,49 @@
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
-   }
-   
-   .cta span {
+}
+
+.cta span {
     position: relative;
     font-family: "Ubuntu", sans-serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #262626;
-   }
-   
-   .cta svg {
+}
+
+.cta svg {
     position: relative;
     top: 0;
     margin-left: 10px;
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #262626;;
+    stroke: #262626;
+    ;
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
-   }
-   
-   .cta:hover:before {
+}
+
+.cta:hover:before {
     width: 100%;
     background: #ea9b3a;
-   }
-   
-   .cta:hover{
+}
+
+.cta:hover {
     border: none;
     background: none;
-   }
-   
-   .cta:hover svg {
-    transform: translateX(0);
-   }
-   
-   .cta:active {
-    transform: scale(0.95);
-   }
+}
 
-   .image-card{
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.image-card {
     background: #ea9b3a;
-   }
+}
