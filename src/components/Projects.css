@@ -13,6 +13,15 @@
     margin-left: auto;
 }
 
+.horizontal-line {
+    position: absolute;     
+    width: 72.5%;
+    height: 1px;
+    background-color: #000;
+    margin-left: 13.5%;
+  }
+  
+  
 .btn-github {
     background-color: transparent;
     border: none;

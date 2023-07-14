@@ -41,7 +41,10 @@ function Projects() {
         <Container fluid="md">
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
-                    <h2 className="font-medium">PROJETOS</h2>
+                    <Row className="align-items-center" >
+                        <h2 className="font-medium">PROJETOS</h2>
+                        <div className="horizontal-line" />
+                    </Row>
                     <br />
                 </Col>
             </Row>
@@ -55,8 +58,8 @@ function Projects() {
                             <Card.Body>
                                 <div id="card-line">
                                     <Card.Title className="font-medium">{project.title}</Card.Title>
-                                    <BtnGithub 
-                                    giturl={project.urlGit}
+                                    <BtnGithub
+                                        giturl={project.urlGit}
                                     />
                                 </div>
                                 <Card.Text className="font-light">{project.description}</Card.Text>
