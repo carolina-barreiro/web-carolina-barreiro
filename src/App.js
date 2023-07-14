@@ -5,6 +5,7 @@ import NavbarTop from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   const [noturnView, setNoturnView] = useState(false);
@@ -17,6 +18,7 @@ function App() {
           setNoturnView={setNoturnView} />
         <HeroSection />
         <Projects/>
+        <Contact/>
         <Footer/>
         <Routes>
           <Route path='/' exact />

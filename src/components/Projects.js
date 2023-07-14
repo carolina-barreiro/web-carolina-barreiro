@@ -6,8 +6,35 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import { projectsData } from '../projects_data.js';
 import { Github } from 'react-bootstrap-icons';
+
+export function BtnGithub(props) {
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+            Go to github repository
+        </Tooltip>
+    );
+
+    return (
+        <OverlayTrigger
+            placement="left"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip}
+        >
+            <Button
+                href={props.giturl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="github-icon btn-github"
+            >
+                <Github className="align-top" />
+            </Button>
+        </OverlayTrigger>
+    );
+}
 
 function Projects() {
     return (
@@ -28,14 +55,9 @@ function Projects() {
                             <Card.Body>
                                 <div id="card-line">
                                     <Card.Title className="font-medium">{project.title}</Card.Title>
-                                    <Button
-                                        href={project.urlGit}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="github-icon btn-github"
-                                    >
-                                        <Github className="align-top" />
-                                    </Button>
+                                    <BtnGithub 
+                                    giturl={project.urlGit}
+                                    />
                                 </div>
                                 <Card.Text className="font-light">{project.description}</Card.Text>
                                 <div id="card-line">
@@ -63,3 +85,13 @@ function Projects() {
 }
 
 export default Projects;
+
+
+/* <Button
+                                        href={project.urlGit}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="github-icon btn-github"
+                                    >
+                                        <Github className="align-top" />
+                                    </Button> */
