@@ -1,0 +1,19 @@
+#about-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.narrow-column {
+    flex-basis: 10%; /* Adjust the value as desired */
+    max-width: 10%; /* Adjust the value as desired */
+  }
+  
+
+#col1{
+    padding: 0;
+}
+
+#col2{
+    padding-right: 0;
+}
