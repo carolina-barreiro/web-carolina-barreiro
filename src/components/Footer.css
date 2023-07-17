@@ -1,10 +1,13 @@
+.footer-container {
+    padding: 20px;
+}
+
 .card-footer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
-
 
 .socialContainer {
     width: 45px;
@@ -44,5 +47,16 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 10px;
+    }
+
+    .text-md-start,
+    .text-md-end {
+        text-align: center;
     }
 }

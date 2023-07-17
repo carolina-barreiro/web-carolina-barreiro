@@ -15,12 +15,39 @@
 
 .horizontal-line {
     position: absolute;     
-    width: 72.5%;
-    height: 1px;
-    background-color: #000;
-    margin-left: 13.5%;
+    width: 66rem;
+    height: 3px;
+    background-color: #EA9B3A;
+    margin-left: 15rem;
+  }
+
+  @media (max-width: 1400px) {
+    .horizontal-line {
+      width: 55rem;
+      margin-left: 15rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .horizontal-line {
+      width: 43rem;
+      margin-left: 15rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .horizontal-line {
+      width: 50%;
+      margin-left: 25%;
+    }
   }
   
+  @media (max-width: 768px) {
+    .horizontal-line {
+      width: 70%;
+      margin-left: 15%;
+    }
+  }
   
 .btn-github {
     background-color: transparent;

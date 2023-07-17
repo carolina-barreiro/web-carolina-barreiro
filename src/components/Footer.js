@@ -16,21 +16,20 @@ function Footer() {
     const [showPhone, setShowPhone] = useState(false);
     const targetPhone = useRef(null);
     return (
-        <Container
+        <Container fluid
             display="flex"
             justifyContent="between"
             alignItems="center"
             className="mx-auto py-4 flex-wrap"
             style={{ width: '80%' }}
         >
-            <Row>
-                <Col className="d-flex justify-content-start align-items-center">
+            <Row className="align-items-center">
+                <Col xs={12} md={4} className="d-flex justify-content-start align-items-center">
                     <span className="ms-4 h5 mb-0 font-weight-bold">Carolina Barreiro</span>
                 </Col>
-                <Col className="d-flex justify-content-center align-items-center">
-                    <small className="ms-2">&copy; Carolina Barreiro, 2023. All rights reserved.</small>
+                <Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
                 </Col>
-                <Col className="d-flex justify-content-end">
+                <Col xs={12} md={4} className="d-flex justify-content-end">
                     <div className='card-footer'>
                         <Button className="p-2 socialContainer" href="https://linkedin.com/in/carolina-barreiro-12ba7720a" target="_blank">
                             <Linkedin className="iconSocial" />
