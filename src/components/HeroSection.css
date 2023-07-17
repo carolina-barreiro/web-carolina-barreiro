@@ -24,7 +24,7 @@ p {
     width: 7em;
     height: 2.3em;
     margin: 0.5em;
-    background: black;
+    background: #2c2c2c;
     color: white;
     border: none;
     border-radius: 0.625em;
@@ -37,15 +37,15 @@ p {
 }
 
 .btn-custom:hover {
-    background: black !important;
+    background: #2c2c2c !important;
     outline: none;
-    color: black;
+    color: #2c2c2c;
 }
 
 .btn-custom::after {
     content: "";
     background: white;
-    color: black;
+    color: #2c2c2c;
     position: absolute;
     z-index: -1;
     left: -20%;

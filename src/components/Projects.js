@@ -21,24 +21,24 @@ export function BtnGithub(props) {
     return (
         <OverlayTrigger
             placement="left"
-            delay={{ show: 250, hide: 400 }}
+            delay={{ show: 200, hide: 200 }}
             overlay={renderTooltip}
         >
-            <Button
+            <a
                 href={props.giturl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="github-icon btn-github"
             >
                 <Github className="align-top" />
-            </Button>
+            </a>
         </OverlayTrigger>
     );
 }
 
 function Projects() {
     return (
-        <Container fluid="md">
+        <Container fluid="md" className="font-medium">
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
                     <Row className="align-items-center" >

@@ -26,7 +26,7 @@ export function FormContact() {
                     <Form.Control as="textarea" rows={3} />
                 </Form.Group>
             </Form>
-            <Button href="#" className="btn-custom font-light GothamBook">Contact me</Button>
+            <Button href="#" className="btn-custom font-light">Contact me</Button>
         </>
     );
 }
@@ -40,13 +40,13 @@ function Contact() {
                     <br />
                 </Col>
             </Row>
-            <Container fluid className="container-fluid no-gutters m-0 custom-container ">
+            <Container fluid className="container-fluid no-gutters m-0 custom-container font-light">
                 <Row className="row no-border custom-row justify-content-start align-items-center">
                     <Card className="card-contact justify-content-center">
                         <Card.Body>
                             <Row>
-                                <Col className="d-flex align-items-center flex-column">
-                                    <div className="left-side">
+                                <Col className="d-flex align-items-left flex-column">
+                                    <div className="left-side ">
                                         <Image src="/images/leafy-houseplant-in-vase.png" className="contact-image" />
                                         <h3 style={{margin: 0}}> Let's chat!</h3>
                                     </div>
