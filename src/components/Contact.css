@@ -24,6 +24,19 @@
     border: none;
 }
 
+.custom-margin{
+    margin-top: 5%;
+}
+
+#chat{
+    font-size: 34px;
+}
+
+.img.contact-image{
+    width: 120%!important;
+    height: 100% !important;
+}
+
 h3 {
     margin: 0;
     margin-bottom: 0;

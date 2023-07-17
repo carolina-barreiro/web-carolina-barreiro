@@ -26,7 +26,7 @@ export function FormContact() {
                     <Form.Control as="textarea" rows={3} />
                 </Form.Group>
             </Form>
-            
+
         </>
     );
 }
@@ -35,68 +35,68 @@ function Contact() {
     return (
         <div id="contact-section">
             <Container >
-            <Row className="justify-content-md-center" id="contactPage">
-                <Col className="align-items-center justify-content-center">
-                    <Row className="align-items-center" >
-                        <h2 className="font-outfit">CONTACT</h2>
-                    </Row>
-                    <br />
-                </Col>
-            </Row>
-<Container fluid className="container-fluid no-gutters m-0 custom-container font-light">
-    <Card className="card-contact justify-content-center custom-container">
-        <Row className="justify-content-center">
-            <Col md={10}>
-                <Row className="align-items-center">
-                    <Col lg={5} className="ml-auto">
-                        <h3 className="pr-7 mb-2 font-outfit">Let's chat!</h3>
-                        <p className="font-spline">Please fill in the form and I'll get back to you as soon as possible.</p>
-                        <Image src="/images/contact_me.png" className="contact-image" />
-                    </Col>
-                    <Col lg={7} className="mb-5 mb-lg-0">
-                        <form className="pr-2 mb-3 mt-5 font-spline" method="post" id="contactForm" name="contactForm">
-                            <Row className="mb-3">
-                                <Col md={6} className="form-group">
-                                    <input type="text" className="form-control" name="fname" id="fname" placeholder="First name" />
-                                </Col>
-                                <Col md={6} className="form-group">
-                                    <input type="text" className="form-control" name="lname" id="lname" placeholder="Last name" />
-                                </Col>
-                            </Row>
-                            <Row className="mb-3">
-                                <Col md={12} className="form-group">
-                                    <input type="text" className="form-control" name="email" id="email" placeholder="Email" />
-                                </Col>
-                            </Row>
-                            <Row className="mb-3">
-                                <Col md={12} className="form-group">
-                                    <textarea
-                                        className="form-control"
-                                        name="message"
-                                        id="message"
-                                        cols="30"
-                                        rows="7"
-                                        placeholder="Write your message"
-                                    ></textarea>
-                                </Col>
-                            </Row>
-                            <Row className="mb-3">
-                                <Col md={12}>
-                                    
-                                    <Button  type="submit"
-                                        value="Send Message"
-                                         href="#" className="btn-custom font-light  py-2 px-4">Contact me</Button>
-                                </Col>
-                            </Row>
-                        </form>
-                        <div id="form-message-warning" className="mt-4"></div>
-                        <div id="form-message-success">Your message was sent, thank you!</div>
+                <Row className="justify-content-md-center" id="contactPage">
+                    <Col className="align-items-center justify-content-center">
+                        <Row className="align-items-center" >
+                            <h2 className="font-outfit">CONTACT</h2>
+                        </Row>
+                        <br />
                     </Col>
                 </Row>
-            </Col>
-        </Row>
-    </Card>
-</Container>
+                <Container fluid className="container-fluid no-gutters m-0 custom-container font-light">
+                    <Card className="card-contact justify-content-center custom-container">
+                        <Row className="justify-content-center">
+                            <Col md={10}>
+                                <Row className="align-items-center custom-margin">
+                                    <h3 className="pr-7 mb-2 mt-4 font-outfit" id="chat">Let's chat!</h3>
+                                    <p className="font-spline mb-2">Please fill in the form and I'll get back to you as soon as possible.</p>
+                                    <Col lg={5} className="ml-auto">
+                                        <Image src="/images/contact_me.png" style={{ width: '130%', height: '100%', marginLeft: '-15%' }} />
+                                    </Col>
+                                    <Col lg={7} className="mb-5 mb-lg-0">
+                                        <form className="pr-2 mb-3 mt-5 font-spline" method="post" id="contactForm" name="contactForm">
+                                            <Row className="mb-3">
+                                                <Col md={6} className="form-group">
+                                                    <input type="text" className="form-control" name="fname" id="fname" placeholder="First name" />
+                                                </Col>
+                                                <Col md={6} className="form-group">
+                                                    <input type="text" className="form-control" name="lname" id="lname" placeholder="Last name" />
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-3">
+                                                <Col md={12} className="form-group">
+                                                    <input type="text" className="form-control" name="email" id="email" placeholder="Email" />
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-3">
+                                                <Col md={12} className="form-group">
+                                                    <textarea
+                                                        className="form-control"
+                                                        name="message"
+                                                        id="message"
+                                                        cols="30"
+                                                        rows="7"
+                                                        placeholder="Write your message"
+                                                    ></textarea>
+                                                </Col>
+                                            </Row>
+                                            <Row className="mb-3">
+                                                <Col md={12}>
+
+                                                    <Button type="submit"
+                                                        value="Send Message"
+                                                        href="#" className="btn-custom font-light  py-2 px-4">Contact me</Button>
+                                                </Col>
+                                            </Row>
+                                        </form>
+                                        <div id="form-message-warning" className="mt-4"></div>
+                                        <div id="form-message-success">Your message was sent, thank you!</div>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Card>
+                </Container>
 
 
             </Container>
