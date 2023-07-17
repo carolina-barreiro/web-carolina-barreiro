@@ -39,7 +39,6 @@ function Contact() {
                 <Col className="align-items-center justify-content-center">
                     <Row className="align-items-center" >
                         <h2 className="font-medium">CONTACT</h2>
-                        <div className="horizontal-line" />
                     </Row>
                     <br />
                 </Col>
@@ -50,7 +49,7 @@ function Contact() {
             <Col md={10}>
                 <Row className="align-items-center">
                     <Col lg={5} className="ml-auto">
-                        <h3 className=" pr-7 mb-4">Let's chat!</h3>
+                        <h3 className="pr-7 mb-4">Let's chat!</h3>
                         <p>Please fill in the form and I'll get back to you as soon as possible.</p>
                         <Image src="/images/contact_me.png" className="contact-image" />
                     </Col>
