@@ -42,7 +42,7 @@ function Projects() {
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
                     <Row className="align-items-center" >
-                        <h2 className="font-medium">PROJETOS</h2>
+                        <h2 className="font-outfit">PROJETOS</h2>
                         <div className="horizontal-line" />
                     </Row>
                     <br />
@@ -57,14 +57,14 @@ function Projects() {
                             </div>
                             <Card.Body>
                                 <div id="card-line">
-                                    <Card.Title className="font-medium">{project.title}</Card.Title>
+                                    <Card.Title className="font-outfit">{project.title}</Card.Title>
                                     <BtnGithub
                                         giturl={project.urlGit}
                                     />
                                 </div>
-                                <Card.Text className="font-light">{project.description}</Card.Text>
+                                <Card.Text className="font-spline">{project.description}</Card.Text>
                                 <div id="card-line">
-                                    <Card.Text className="font-medium">
+                                    <Card.Text className="font-spline">
                                         {project.technologies.map((technology, techIdx) => (
                                             <span key={techIdx}><b>
                                                 {technology.tech}
@@ -72,7 +72,7 @@ function Projects() {
                                             </b></span>
                                         ))}
                                     </Card.Text>
-                                    <Button href="#" className="cta " > <span>Launch</span>
+                                    <Button href="#" className="cta font-spline" > <span>Launch</span>
                                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                                             <path d="M1,5 L11,5"></path>
                                             <polyline points="8 1 12 5 8 9"></polyline>

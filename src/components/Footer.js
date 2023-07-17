@@ -25,7 +25,7 @@ function Footer() {
         >
             <Row className="align-items-center">
                 <Col xs={12} md={4} className="d-flex justify-content-start align-items-center">
-                    <span className="ms-4 h5 mb-0 font-weight-bold">Carolina Barreiro</span>
+                    <span className="ms-4 h5 mb-0 font-outfit">Carolina Barreiro</span>
                 </Col>
                 <Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
                 </Col>

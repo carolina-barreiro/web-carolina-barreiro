@@ -1,183 +1,194 @@
 #projectsPage {
-    margin-top: 20px;
-    padding-top: 100px;
+  margin-top: 20px;
+  padding-top: 100px;
 }
 
 #card-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #card-line .btn {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .horizontal-line {
-    position: absolute;     
-    width: 66rem;
-    height: 3px;
-    background-color: #EA9B3A;
+  position: absolute;
+  width: 66rem;
+  height: 3px;
+  background-color: #EA9B3A;
+  margin-left: 15rem;
+}
+
+@media (max-width: 1400px) {
+  .horizontal-line {
+    width: 55rem;
     margin-left: 15rem;
   }
+}
 
-  @media (max-width: 1400px) {
-    .horizontal-line {
-      width: 55rem;
-      margin-left: 15rem;
-    }
+@media (max-width: 1200px) {
+  .horizontal-line {
+    width: 43rem;
+    margin-left: 15rem;
   }
+}
 
-  @media (max-width: 1200px) {
-    .horizontal-line {
-      width: 43rem;
-      margin-left: 15rem;
-    }
+@media (max-width: 992px) {
+  .horizontal-line {
+    width: 50%;
+    margin-left: 25%;
   }
+}
 
-  @media (max-width: 992px) {
-    .horizontal-line {
-      width: 50%;
-      margin-left: 25%;
-    }
+@media (max-width: 768px) {
+  .horizontal-line {
+    width: 70%;
+    margin-left: 15%;
   }
-  
-  @media (max-width: 768px) {
-    .horizontal-line {
-      width: 70%;
-      margin-left: 15%;
-    }
-  }
-  
+}
+
 .btn-github {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    box-shadow: none;
-    color: inherit;
-    text-decoration: none;
-    transition: none;
-    font-size: 1.5em;
-    background: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  color: inherit;
+  text-decoration: none;
+  transition: none;
+  font-size: 1.5em;
+  background: none;
 }
 
 .btn-github:hover {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    box-shadow: none;
-    color: inherit;
-    text-decoration: none;
-    transition: none;
-    font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  color: inherit;
+  text-decoration: none;
+  transition: none;
+  font-size: 1.5em;
 }
 
 .btn-github:focus {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    box-shadow: none;
-    color: inherit;
-    text-decoration: none;
-    transition: none;
-    font-size: 1.5em;
-    background: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  color: inherit;
+  text-decoration: none;
+  transition: none;
+  font-size: 1.5em;
+  background: none;
 }
 
 .cta {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+button.cta.font-spline {
+  font-family: 'SplineSansRegular'!important;
 }
 
 .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #ea9b3a;
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #ea9b3a;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
 }
 
 .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: #262626;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #262626;
 }
 
 .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #262626;
-    ;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #262626;
+  ;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
 }
 
 .cta:hover:before {
-    width: 100%;
-    background: #ea9b3a;
+  width: 100%;
+  background: #ea9b3a;
 }
 
 .cta:hover {
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 }
 
 .cta:hover svg {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .cta:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .image-card {
-    background: #ea9b3a;
+  background: #ea9b3a;
 }
+
 .card-image-overlay {
-    position: relative;
-    overflow: hidden; /* Ensure the overflow is hidden to hide the fade effect */
-  }
-  
-  .card-image-overlay::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3)); /* Adjust the gradient direction and color as needed */
-    pointer-events: none; /* Ensures that the overlay doesn't interfere with clicking on the image */
-    opacity: 0; /* Initially hide the fade effect */
-    transition: opacity 0.5s ease-in-out; /* Adding transition for smooth fade animation */
-  }
-  
-  .card-image-overlay:hover::after {
-    opacity: 1; /* Show the fade effect on hover */
-  }
-  
-  .card-image-overlay img {
-    filter: grayscale(100%);
-    transition: filter 0.5s ease-in-out; /* Adding transition for smooth grayscale animation */
-  }
-  
-  .card-image-overlay:hover img {
-    filter: grayscale(0%); /* Reverting back to original color on hover */
-  }
-  
+  position: relative;
+  overflow: hidden;
+  /* Ensure the overflow is hidden to hide the fade effect */
+}
+
+.card-image-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+  /* Adjust the gradient direction and color as needed */
+  pointer-events: none;
+  /* Ensures that the overlay doesn't interfere with clicking on the image */
+  opacity: 0;
+  /* Initially hide the fade effect */
+  transition: opacity 0.5s ease-in-out;
+  /* Adding transition for smooth fade animation */
+}
+
+.card-image-overlay:hover::after {
+  opacity: 1;
+  /* Show the fade effect on hover */
+}
+
+.card-image-overlay img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+  /* Adding transition for smooth grayscale animation */
+}
+
+.card-image-overlay:hover img {
+  filter: grayscale(0%);
+  /* Reverting back to original color on hover */
+}

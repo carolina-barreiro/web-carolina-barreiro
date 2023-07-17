@@ -50,11 +50,11 @@ function HeroSection() {
             <Row className="justify-content-md-center" id="landingPage">
                 <Col className="align-items-center justify-content-center" id="column1">
                     <div className="content-wrapper">
-                        <h3 className="font-medium">HELLO!</h3>
-                        <h1 className="font-medium">I'm Carolina Barreiro</h1>
-                        <p className="font-light">I'm an dedicated and active Masters student in Engineering and Management of Information Systems at the University of Minho, based in Braga, Portugal. I'm open to new opportunities and I'm eager to grow professionally. Browse my portfolio to discover my skills and projects.</p>
-                        <Button href="#" className="btn-custom font-light GothamBook" onClick={() => setModalShow(true)}>Contact me</Button> {' '} <Button href={CV_Carolina_Barreiro_en} download="CV_Carolina_Barreiro_en"
-                            target="_blank" rel="noreferrer" className="btn-custom font-light" >Get my CV</Button>
+                        <h4 className="font-outfit">HELLO!</h4>
+                        <h1 className="font-outfit">I'm Carolina Barreiro</h1>
+                        <p className="font-spline">I'm an dedicated and active Masters student in Engineering and Management of Information Systems at the University of Minho, based in Braga, Portugal. I'm open to new opportunities and I'm eager to grow professionally. Browse my portfolio to discover my skills and projects.</p>
+                        <Button href="#" className="btn-custom font-spline" onClick={() => setModalShow(true)}>Contact me</Button> {' '} <Button href={CV_Carolina_Barreiro_en} download="CV_Carolina_Barreiro_en"
+                            target="_blank" rel="noreferrer" className="btn-custom font-spline" >Get my CV</Button>
                         <ModalContact
                             show={modalShow}
                             onHide={() => setModalShow(false)}

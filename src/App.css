@@ -1,20 +1,54 @@
-@font-face{
+@font-face {
     font-family: "GothamBook";
-    src: local("GothamBook"), 
-    url("./fonts/Gotham/GothamBook.ttf") format("truetype");
-    font-weight: bold;
-}
-@font-face{
-    font-family: "GothamMedium";
-    src: local("GothamMedium"), 
-    url("./fonts/Gotham/GothamMedium.ttf") format("truetype");
+    src: local("GothamBook"),
+        url("./fonts/Gotham/GothamBook.ttf") format("truetype");
     font-weight: bold;
 }
 
-.font-medium{
+@font-face {
+    font-family: "GothamMedium";
+    src: local("GothamMedium"),
+        url("./fonts/Gotham/GothamMedium.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "OutfitRegular";
+    src: local("OutfitRegular"),
+        url("./fonts/Outfit/Outfit-Regular.ttf") format("truetype");
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: "SplineSansRegular";
+    src: local("SplineSansRegular"),
+        url("./fonts/SplineSans/SplineSans-Regular.ttf") format("truetype");
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: "SplineSansMedium";
+    src: local("SplineSansMedium"),
+        url("./fonts/SplineSans/SplineSans-Medium.ttf") format("truetype");
+    font-weight: regular;
+}
+
+.font-medium {
     font-family: "GothamMedium";
 }
 
-.font-light{
+.font-light {
     font-family: "GothamBook";
+}
+
+.font-outfit {
+    font-family: "OutfitRegular";
+}
+
+.font-spline {
+    font-family: "SplineSansRegular";
+}
+
+.font-spline-m {
+    font-family: "SplineSansMedium";
 }

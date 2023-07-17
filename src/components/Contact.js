@@ -38,7 +38,7 @@ function Contact() {
             <Row className="justify-content-md-center" id="contactPage">
                 <Col className="align-items-center justify-content-center">
                     <Row className="align-items-center" >
-                        <h2 className="font-medium">CONTACT</h2>
+                        <h2 className="font-outfit">CONTACT</h2>
                     </Row>
                     <br />
                 </Col>
@@ -49,12 +49,12 @@ function Contact() {
             <Col md={10}>
                 <Row className="align-items-center">
                     <Col lg={5} className="ml-auto">
-                        <h3 className="pr-7 mb-4">Let's chat!</h3>
-                        <p>Please fill in the form and I'll get back to you as soon as possible.</p>
+                        <h3 className="pr-7 mb-2 font-outfit">Let's chat!</h3>
+                        <p className="font-spline">Please fill in the form and I'll get back to you as soon as possible.</p>
                         <Image src="/images/contact_me.png" className="contact-image" />
                     </Col>
                     <Col lg={7} className="mb-5 mb-lg-0">
-                        <form className="pr-2 mb-3 mt-5" method="post" id="contactForm" name="contactForm">
+                        <form className="pr-2 mb-3 mt-5 font-spline" method="post" id="contactForm" name="contactForm">
                             <Row className="mb-3">
                                 <Col md={6} className="form-group">
                                     <input type="text" className="form-control" name="fname" id="fname" placeholder="First name" />

@@ -14,9 +14,9 @@ function NavbarTop(props) {
   }
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary font-light">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary font-spline">
       <Container>
-        <Navbar.Brand href="#home">&lt;<span className="title-navbar font-medium"> Carolina Barreiro </span>/&gt;</Navbar.Brand>
+        <Navbar.Brand href="#home">&lt;<span className="title-navbar font-outfit"> Carolina Barreiro </span>/&gt;</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="ms-auto">

@@ -29,7 +29,6 @@ p {
     border: none;
     border-radius: 0.625em;
     font-size: 20px;
-    font-weight: bold;
     cursor: pointer;
     position: relative;
     z-index: 1;
@@ -62,8 +61,8 @@ p {
     transition: all 0.5s;
 }
 
-.btn-custom.font-light {
-    font-family: 'GothamBook';
+.btn-custom.font-spline {
+    font-family: 'SplineSansRegular';
   }
 
 .hero-image {
