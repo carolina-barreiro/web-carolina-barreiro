@@ -5,8 +5,8 @@
 }
 
 .narrow-column {
-    flex-basis: 10%; /* Adjust the value as desired */
-    max-width: 10%; /* Adjust the value as desired */
+    flex-basis: 10%;
+    max-width: 10%; 
   }
   
 

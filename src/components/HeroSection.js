@@ -7,16 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
-import CV_Carolina_Barreiro_en from '../assets/CV_Carolina_Barreiro_en.pdf';
-
-export function BtnBlackSimple(props) {
-
-    return (
-        <Button className={`btn-custom font-spline ${props.noturnView ? 'dark-mode-background' : ''}`} href={props.link === 'cv' ? CV_Carolina_Barreiro_en : '#'}
-            download={props.link === 'cv' ? 'CV_Carolina_Barreiro_en' : ''}>{props.txt}</Button>
-    );
-}
-
+import BtnBlackSimple from './BtnBlackSimple';
 
 function HeroSection(props) {
 

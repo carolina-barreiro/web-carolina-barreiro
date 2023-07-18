@@ -1,3 +1,23 @@
+.card-contact.dark-mode-background {
+    background-color: #222222;
+    color: #f7f7f7;
+}
+
+.dark-mode-background input[type="text"],
+.dark-mode-background textarea {
+  background-color: #333333;
+  color: #f7f7f7;
+}
+
+.dark-mode-background input[type="text"]::placeholder,
+.dark-mode-background textarea::placeholder {
+  color: #a9a9a9;
+}
+
+.dark-mode-background #contact_h2{
+    color: #333333;
+}
+
 #contact-section {
     background-image: linear-gradient(to top, #eb870e, #ee9125, #f19b37, #f4a547, #f7ae56, #f9b766, #fbbf77, #fdc887, #fed29c, #ffdcb2, #ffe6c8, #fff0de);
     margin-top: 3rem;

@@ -5,25 +5,27 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Moon, Sun} from 'react-bootstrap-icons';
+import { Moon, Sun } from 'react-bootstrap-icons';
 
 function NavbarTop(props) {
 
-  function changeView(){
+  function changeView() {
     props.setNoturnView(!props.noturnView);
   }
 
   return (
     <Navbar collapseOnSelect expand="lg" className={`font-spline ${props.noturnView ? 'dark-mode-navbar' : 'bg-body-tertiary'}`}>
       <Container >
-        <Navbar.Brand href="#home">&lt;<span className="title-navbar font-outfit"> Carolina Barreiro </span>/&gt;</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <span className={props.noturnView ? 'dark-mode-tags-color' : ''}>&lt;</span><span className="title-navbar font-outfit"> Carolina Barreiro </span> <span className={props.noturnView ? 'dark-mode-tags-color' : ''}>/&gt;</span>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className={`${props.noturnView ? 'dark-mode-navbar' : ''}`}>
           <Nav className="ms-auto">
             <Nav.Link href="#">About</Nav.Link>
             <Nav.Link href="#" >Projects</Nav.Link>
             <Nav.Link href="#">Contact</Nav.Link>
-            {props.noturnView?  <Nav.Link onClick={changeView} className="sun-icon"><Sun /></Nav.Link>:  <Nav.Link onClick={changeView} className="moon-icon"><Moon /></Nav.Link>}
+            {props.noturnView ? <Nav.Link onClick={changeView} className="sun-icon"><Sun /></Nav.Link> : <Nav.Link onClick={changeView} className="moon-icon"><Moon /></Nav.Link>}
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -32,3 +34,6 @@ function NavbarTop(props) {
 }
 
 export default NavbarTop;
+
+
+

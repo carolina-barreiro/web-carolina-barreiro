@@ -11,10 +11,18 @@
   color: #f7f7f7;
 }
 
+.dark-mode-tags-color{
+  color:#f7f7f7;
+}
+
 .sun-icon{
   color: #f7f7f7 !important;
 }
 
 .moon-icon{
   color: #000000a6;
+}
+
+.nav-link {
+  margin-right: 2em; /* Adjust the value as needed */
 }

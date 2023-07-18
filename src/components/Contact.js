@@ -1,14 +1,14 @@
 import './Contact.css';
+import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
-import { BtnBlackSimple } from './HeroSection';
-
+import BtnBlackSimple from './BtnBlackSimple';
 
 export function FormContact() {
     return (
@@ -32,20 +32,20 @@ export function FormContact() {
     );
 }
 
-function Contact() {
+function Contact(props) {
     return (
         <div id="contact-section">
             <Container >
                 <Row className="justify-content-md-center" id="contactPage">
                     <Col className="align-items-center justify-content-center">
                         <Row className="align-items-center" >
-                            <h2 className="font-outfit">CONTACT</h2>
+                            <h2 className="font-outfit" id="contact_h2"> CONTACT</h2>
                         </Row>
                         <br />
                     </Col>
                 </Row>
                 <Container fluid className="container-fluid no-gutters m-0 custom-container font-light">
-                    <Card className="card-contact justify-content-center custom-container">
+                    <Card className={`card-contact justify-content-center custom-container ${props.noturnView ? 'dark-mode-background' : ''}`}>
                         <Row className="justify-content-center">
                             <Col md={10}>
                                 <Row className="align-items-center custom-margin">
@@ -86,6 +86,7 @@ function Contact() {
                                                     <BtnBlackSimple
                                                         txt='Send Message'
                                                         type="submit"
+                                                        noturnView={props.noturnView}
                                                     />
                                                     </Col>
                                             </Row>
@@ -106,7 +107,6 @@ function Contact() {
 }
 
 export default Contact;
-
 
 /*
             <Button type="submit"
