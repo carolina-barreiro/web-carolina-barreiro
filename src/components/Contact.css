@@ -5,16 +5,16 @@
 
 .dark-mode-background input[type="text"],
 .dark-mode-background textarea {
-  background-color: #333333;
-  color: #f7f7f7;
+    background-color: #333333;
+    color: #f7f7f7;
 }
 
 .dark-mode-background input[type="text"]::placeholder,
 .dark-mode-background textarea::placeholder {
-  color: #a9a9a9;
+    color: #a9a9a9;
 }
 
-.dark-mode-background #contact_h2{
+.dark-mode-background #contact_h2 {
     color: #333333;
 }
 
@@ -27,6 +27,7 @@
     padding-top: 2rem;
 }
 
+/*
 .contact-image {
     max-width: '100%';
     max-height: auto;
@@ -34,6 +35,11 @@
     max-height: 95%;
     margin: 0;
     padding: 0;
+}*/
+.contact-image {
+    width: 130%;
+    height: 100%;
+    margin-left: -15%;
 }
 
 .custom-container {
@@ -92,11 +98,43 @@ form.border-right {
     padding-right: 5rem !important;
 }
 
+/*
 @media (max-width: 991.98px) {
     form.border-right {
         padding-right: 0 !important;
         border-right: none !important;
     }
+}*/
+
+@media (max-width: 992px) {
+    .custom-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .contact-image {
+        width: 75%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form.border-right {
+        padding-right: 0 !important;
+        border-right: none !important;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+
 }
 
 label.error {

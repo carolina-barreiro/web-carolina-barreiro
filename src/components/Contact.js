@@ -52,7 +52,7 @@ function Contact(props) {
                                     <h3 className="pr-7 mb-2 mt-4 font-outfit" id="chat">Let's chat!</h3>
                                     <p className="font-spline mb-2">Please fill in the form and I'll get back to you as soon as possible.</p>
                                     <Col lg={5} className="ml-auto">
-                                        <Image src="/images/contact_me.png" style={{ width: '130%', height: '100%', marginLeft: '-15%' }} />
+                                        <Image src="/images/contact_me.png" className="contact-image" />
                                     </Col>
                                     <Col lg={7} className="mb-5 mb-lg-0">
                                         <form className="pr-2 mb-3 mt-5 font-spline" method="post" id="contactForm" name="contactForm">
@@ -76,19 +76,20 @@ function Contact(props) {
                                                         name="message"
                                                         id="message"
                                                         cols="30"
-                                                        rows="7"
+                                                        rows="5"
                                                         placeholder="Write your message"
                                                     ></textarea>
                                                 </Col>
                                             </Row>
                                             <Row className="mb-3">
-                                                <Col md={12}>
+                                                <Col md={12} >
                                                     <BtnBlackSimple
+                                                    id="btn-send-message"
                                                         txt='Send Message'
                                                         type="submit"
                                                         noturnView={props.noturnView}
                                                     />
-                                                    </Col>
+                                                </Col>
                                             </Row>
                                         </form>
                                         <div id="form-message-warning" className="mt-4"></div>
@@ -99,8 +100,6 @@ function Contact(props) {
                         </Row>
                     </Card>
                 </Container>
-
-
             </Container>
         </div>
     );

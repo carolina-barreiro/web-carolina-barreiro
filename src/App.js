@@ -28,7 +28,8 @@ function App() {
           <Contact
             noturnView={noturnView} />
           <Footer
-            noturnView={noturnView} />
+            noturnView={noturnView}
+            setNoturnView={setNoturnView} />
         </div>
         <Routes>
           <Route path='/' exact />
