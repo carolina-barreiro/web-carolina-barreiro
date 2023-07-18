@@ -14,7 +14,10 @@ function About() {
         <Container className="fluid">
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
+                <Row className="align-items-center" >
                     <h2 className="font-outfit">ABOUT</h2>
+                    <div className="horizontal-line" />
+                    </Row>
                     <br />
                     <Row xs={1} md={3} className="justify-content-md-center g-4">
                        <Col md={5} id="col1">

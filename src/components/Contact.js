@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
+import { BtnBlackSimple } from './HeroSection';
 
 
 export function FormContact() {
@@ -82,11 +83,11 @@ function Contact() {
                                             </Row>
                                             <Row className="mb-3">
                                                 <Col md={12}>
-
-                                                    <Button type="submit"
-                                                        value="Send Message"
-                                                        href="#" className="btn-custom font-light  py-2 px-4">Contact me</Button>
-                                                </Col>
+                                                    <BtnBlackSimple
+                                                        txt='Send Message'
+                                                        type="submit"
+                                                    />
+                                                    </Col>
                                             </Row>
                                         </form>
                                         <div id="form-message-warning" className="mt-4"></div>
@@ -107,32 +108,8 @@ function Contact() {
 export default Contact;
 
 
-/*  <Container>
-                <Row className="justify-content-md-center" id="contactPage">
-                    <Col className="align-items-center justify-content-center">
-                        <h2 className="font-medium">CONTACT ME</h2>
-                        <br />
-                    </Col>
-                </Row>
-                <Container fluid className="container-fluid no-gutters m-0 custom-container font-light">
-                    <Row className="row no-border custom-row justify-content-start align-items-center">
-                        <Card className="card-contact justify-content-center">
-                            <Card.Body>
-                                <Row>
-                                    <Col className="d-flex align-items-left flex-column">
-                                        <div className="left-side ">
-                                            <Image src="/images/leafy-houseplant-in-vase.png" className="contact-image" />
-                                            <h3 style={{ margin: 0 }}> Let's chat!</h3>
-                                        </div>
-                                        <h6>Please fill in the form andI'll get back to you as soon as possible.</h6>
-                                    </Col>
-                                    <Col>
-                                        <br></br>
-                                        <FormContact />
-                                    </Col>
-                                </Row>
-                            </Card.Body>
-                        </Card>
-                    </Row>
-                </Container>
-            </Container> */
+/*
+            <Button type="submit"
+            value="Send Message"
+            className="btn-custom font-light  py-2 px-4">Contact me</Button>
+   */

@@ -1,5 +1,5 @@
 #contact-section {
-    background-color: #EA9B3A;
+    background-image: linear-gradient(to top, #eb870e, #ee9125, #f19b37, #f4a547, #f7ae56, #f9b766, #fbbf77, #fdc887, #fed29c, #ffdcb2, #ffe6c8, #fff0de);
     margin-top: 3rem;
 }
 
@@ -24,16 +24,16 @@
     border: none;
 }
 
-.custom-margin{
+.custom-margin {
     margin-top: 5%;
 }
 
-#chat{
+#chat {
     font-size: 34px;
 }
 
-.img.contact-image{
-    width: 120%!important;
+.img.contact-image {
+    width: 120% !important;
     height: 100% !important;
 }
 

@@ -42,7 +42,7 @@ function Projects() {
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
                     <Row className="align-items-center" >
-                        <h2 className="font-outfit">PROJETOS</h2>
+                        <h2 className="font-outfit">PROJECTS</h2>
                         <div className="horizontal-line" />
                     </Row>
                     <br />
