@@ -52,3 +52,11 @@
 .font-spline-m {
     font-family: "SplineSansMedium";
 }
+
+.dark-mode-background {
+    background-color: #222222;
+    color: #f7f7f7;
+
+}
+
+

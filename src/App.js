@@ -12,15 +12,20 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router >
         <NavbarTop
           noturnView={noturnView}
           setNoturnView={setNoturnView} />
-        <HeroSection />
-        <Projects/>
-        <About/>
-        <Contact/>
-        <Footer/>
+        <HeroSection
+          noturnView={noturnView} />
+        <Projects
+          noturnView={noturnView} />
+        <About
+          noturnView={noturnView} />
+        <Contact
+          noturnView={noturnView} />
+        <Footer
+          noturnView={noturnView} />
         <Routes>
           <Route path='/' exact />
         </Routes>

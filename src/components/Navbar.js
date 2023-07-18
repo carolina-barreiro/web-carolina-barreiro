@@ -14,15 +14,15 @@ function NavbarTop(props) {
   }
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary font-spline">
-      <Container>
+    <Navbar collapseOnSelect expand="lg" className={`font-spline ${props.noturnView ? 'dark-mode-navbar' : 'bg-body-tertiary'}`}>
+      <Container >
         <Navbar.Brand href="#home">&lt;<span className="title-navbar font-outfit"> Carolina Barreiro </span>/&gt;</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" >
+        <Navbar.Collapse id="responsive-navbar-nav" className={`${props.noturnView ? 'dark-mode-navbar' : ''}`}>
           <Nav className="ms-auto">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects" >Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="#" >Projects</Nav.Link>
+            <Nav.Link href="#">Contact</Nav.Link>
             {props.noturnView?  <Nav.Link onClick={changeView} className="sun-icon"><Sun /></Nav.Link>:  <Nav.Link onClick={changeView} className="moon-icon"><Moon /></Nav.Link>}
           </Nav>
         </Navbar.Collapse>

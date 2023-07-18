@@ -11,6 +11,7 @@ import Image from 'react-bootstrap/Image';
 
 function About() {
     return (
+        <div className="dark-mode-background">
         <Container className="fluid">
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
@@ -49,6 +50,7 @@ function About() {
             </Row>
            
         </Container>
+        </div>
     );
 }
 

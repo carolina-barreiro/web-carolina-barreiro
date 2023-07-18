@@ -36,8 +36,9 @@ export function BtnGithub(props) {
     );
 }
 
-function Projects() {
+function Projects(props) {
     return (
+        <div className={`${props.noturnView ? 'dark-mode-background' : ''}`}>
         <Container fluid="md" className="font-medium">
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
@@ -51,7 +52,7 @@ function Projects() {
             <Row xs={1} md={2} className="justify-content-md-center g-4">
                 {projectsData.map((project, idx) => (
                     <Col key={idx}>
-                        <Card>
+                        <Card className={`${props.noturnView ? 'dark-mode-card' : ''}`}>
                             <div className="card-image-overlay">
                                 <Card.Img variant="top" className="image-card" src={project.srcImage} />
                             </div>
@@ -72,7 +73,7 @@ function Projects() {
                                             </b></span>
                                         ))}
                                     </Card.Text>
-                                    <Button href="#" className="cta font-spline" > <span>Launch</span>
+                                    <Button href="#" className={`cta font-spline ${props.noturnView ? 'dark-mode-card' : ''}`} > <span>Launch</span>
                                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                                             <path d="M1,5 L11,5"></path>
                                             <polyline points="8 1 12 5 8 9"></polyline>
@@ -84,6 +85,7 @@ function Projects() {
                 ))}
             </Row>
         </Container>
+        </div>
     );
 }
 

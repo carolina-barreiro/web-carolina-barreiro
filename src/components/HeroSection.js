@@ -12,28 +12,31 @@ import CV_Carolina_Barreiro_en from '../assets/CV_Carolina_Barreiro_en.pdf';
 export function BtnBlackSimple(props) {
 
     return (
-        <Button className="btn-custom font-spline" href={props.link === 'cv' ? CV_Carolina_Barreiro_en : '#'}
+        <Button className={`btn-custom font-spline ${props.noturnView ? 'dark-mode-background' : ''}`} href={props.link === 'cv' ? CV_Carolina_Barreiro_en : '#'}
             download={props.link === 'cv' ? 'CV_Carolina_Barreiro_en' : ''}>{props.txt}</Button>
     );
 }
 
-function HeroSection() {
-    const [modalShow, setModalShow] = React.useState(false);
+
+function HeroSection(props) {
 
     return (
+        <div className={`${props.noturnView ? 'dark-mode-background' : ''}`}>
         <Container fluid="md">
             <Row className="justify-content-md-center" id="landingPage">
                 <Col className="align-items-center justify-content-center" id="column1">
-                    <div className="content-wrapper">
-                        <h4 className="font-outfit">HELLO!</h4>
+                    <div className={`content-wrapper ${props.noturnView ? 'dark-mode-background' : ''}`}>
+                        <h4 className="font-outfit" >HELLO!</h4>
                         <h1 className="font-outfit">I'm Carolina Barreiro</h1>
                         <p className="font-spline">I'm an dedicated and active Masters student in Engineering and Management of Information Systems at the University of Minho, based in Braga, Portugal. I'm open to new opportunities and I'm eager to grow professionally. Browse my portfolio to discover my skills and projects.</p>
                         <BtnBlackSimple
                             txt='Contact me'
+                            noturnView={props.noturnView}
                         />
                         <BtnBlackSimple
                             txt='Get my CV'
                             link='cv'
+                            noturnView={props.noturnView}
                         />
                     </div>
                 </Col>
@@ -51,6 +54,7 @@ function HeroSection() {
                 </div>
             </Row>
         </Container>
+        </div>
     );
 
 }

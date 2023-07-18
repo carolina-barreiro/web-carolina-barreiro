@@ -115,6 +115,14 @@
   color: #262626;
 }
 
+.cta.dark-mode-card span {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f7f7f7;
+}
+
 .cta svg {
   position: relative;
   top: 0;
@@ -129,6 +137,19 @@
   transition: all 0.3s ease;
 }
 
+.cta.dark-mode-card svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #f7f7f7;
+  ;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
 .cta:hover:before {
   width: 100%;
   background: #ea9b3a;
@@ -154,7 +175,6 @@
 .card-image-overlay {
   position: relative;
   overflow: hidden;
-  /* Ensure the overflow is hidden to hide the fade effect */
 }
 
 .card-image-overlay::after {
@@ -165,27 +185,25 @@
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
-  /* Adjust the gradient direction and color as needed */
   pointer-events: none;
-  /* Ensures that the overlay doesn't interfere with clicking on the image */
   opacity: 0;
-  /* Initially hide the fade effect */
   transition: opacity 0.5s ease-in-out;
-  /* Adding transition for smooth fade animation */
 }
 
 .card-image-overlay:hover::after {
   opacity: 1;
-  /* Show the fade effect on hover */
 }
 
 .card-image-overlay img {
   filter: grayscale(100%);
   transition: filter 0.5s ease-in-out;
-  /* Adding transition for smooth grayscale animation */
 }
 
 .card-image-overlay:hover img {
   filter: grayscale(0%);
-  /* Reverting back to original color on hover */
+}
+
+.dark-mode-card {
+  background-color: #3b3b3b;
+  color: #f7f7f7;
 }

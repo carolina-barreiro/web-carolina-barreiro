@@ -9,13 +9,15 @@ import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { Linkedin, Github, EnvelopeFill, TelephoneFill } from 'react-bootstrap-icons';
 
-function Footer() {
+function Footer(props) {
     const [showEmail, setShowEmail] = useState(false);
     const targetEmail = useRef(null);
 
     const [showPhone, setShowPhone] = useState(false);
     const targetPhone = useRef(null);
+
     return (
+        <div className={`${props.noturnView ? 'dark-mode-background' : ''}`}>
         <Container fluid
             display="flex"
             justifyContent="between"
@@ -61,6 +63,7 @@ function Footer() {
                 </Col>
             </Row>
         </Container>
+        </div>
     );
 }
 

@@ -1,4 +1,20 @@
 .title-navbar {
-    color:#EA9B3A;
-    font-weight: bold;
-  }
+  color: #EA9B3A;
+  font-weight: bold;
+}
+
+.dark-mode-navbar {
+  background-color: #3b3b3b;
+}
+
+.dark-mode-navbar .nav-link {
+  color: #f7f7f7;
+}
+
+.sun-icon{
+  color: #f7f7f7 !important;
+}
+
+.moon-icon{
+  color: #000000a6;
+}

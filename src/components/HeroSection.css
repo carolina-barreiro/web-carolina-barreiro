@@ -5,7 +5,6 @@
 
 .content-wrapper {
     margin-top: 200px;
-    /* Adjust this value to position the content below the center */
 }
 
 p {
@@ -34,11 +33,32 @@ p {
     overflow: hidden;
 }
 
+.btn-custom.dark-mode-background{
+  padding: 0.5em;
+  margin: 0.5em;
+  background: #eeeff1;
+  color: #2c2c2c;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
 .btn-custom:hover {
     background: #2c2c2c !important;
     outline: none;
     color: #2c2c2c;
 }
+
+.btn-custom.dark-mode-background:hover {
+  background: white !important;
+  outline: none;
+  color: white;
+}
+
 
 .btn-custom::after {
     content: "";
@@ -52,6 +72,21 @@ p {
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
     transition: all 0.5s;
+}
+
+
+.btn-custom.dark-mode-background::after {
+  content: "";
+  background: #2c2c2c;
+  color: #eeeff1;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
 }
 
 .btn-custom:hover::after {
@@ -72,13 +107,13 @@ p {
 }
 
 .svg-shape {
-    position: absolute;
-    top: 2;
-    left: 0;
-    width: 40%;
-    height: 40%;
-    z-index: -1;
-  }
+  position: absolute;
+  top: 2;
+  left: 0;
+  width: 35%;
+  height: 35%;
+  z-index: -1;
+}
   
 #btn-linkedin {
     position: relative;
