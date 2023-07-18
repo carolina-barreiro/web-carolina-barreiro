@@ -11,30 +11,30 @@ import About from './components/About';
 
 
 function App() {
-  const [noturnView, setNoturnView] = useState(false);
+  const [noturnView, setNoturnView] = useState(true);
 
   return (
-    <div>
-    <NavbarTop noturnView={noturnView} setNoturnView={setNoturnView} />
-    <HeroSection
-            noturnView={noturnView} />
-    <Element name="projects">
-    <Projects
-            noturnView={noturnView} />
-    </Element>
-    <Element name="about">
-    <About
-            noturnView={noturnView} />
-    </Element>
-    <Element name="contact">
-    <Contact
-            noturnView={noturnView} />
-    </Element>
-    <Footer
-            noturnView={noturnView}
-            setNoturnView={setNoturnView} />
-  </div>
-   
+    <div className={`${noturnView ? 'dark-mode-background' : ''}`}>
+      <NavbarTop noturnView={noturnView} setNoturnView={setNoturnView} />
+      <HeroSection
+        noturnView={noturnView} />
+      <Element name="projects">
+        <Projects
+          noturnView={noturnView} />
+      </Element>
+      <Element name="about">
+        <About
+          noturnView={noturnView} />
+      </Element>
+      <Element name="contact">
+        <Contact
+          noturnView={noturnView} />
+      </Element>
+      <Footer
+        noturnView={noturnView}
+        setNoturnView={setNoturnView} />
+    </div>
+
   );
 }
 
