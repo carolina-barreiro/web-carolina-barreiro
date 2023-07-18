@@ -24,5 +24,13 @@
 }
 
 .nav-link {
-  margin-right: 2em; /* Adjust the value as needed */
+  margin-right: 2em;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--bs-navbar-link-color);
+}
+.nav-link:focus,
+.nav-link:active {
+  color:  var(--bs-navbar-link-color);
 }

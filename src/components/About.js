@@ -12,7 +12,7 @@ import Image from 'react-bootstrap/Image';
 
 function About(props) {
     return (
-        <div className={`${props.noturnView ? 'dark-mode-background' : ''}`}>
+        <div className={`${props.noturnView ? 'dark-mode-background' : ''}`} id="about">
             <Container className="fluid">
                 <Row className="justify-content-md-center" id="projectsPage">
                     <Col className="align-items-center justify-content-center">
