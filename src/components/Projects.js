@@ -38,7 +38,7 @@ export function BtnGithub(props) {
 
 function Projects(props) {
     return (
-        <div className={`${props.noturnView ? 'dark-mode-background' : ''}`}>
+        <div className={`${props.noturnView ? 'dark-mode-background' : ''}`} id="projectsnpm ">
         <Container fluid="md" className="font-medium">
             <Row className="justify-content-md-center" id="projectsPage">
                 <Col className="align-items-center justify-content-center">
