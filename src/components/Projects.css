@@ -14,38 +14,26 @@
 }
 
 .horizontal-line {
-  position: absolute;
-  width: 66rem;
+  position: relative;
+  width: 100%;
   height: 3px;
   background-color: #EA9B3A;
-  margin-left: 15rem;
-}
-
-@media (max-width: 1400px) {
-  .horizontal-line {
-    width: 55rem;
-    margin-left: 15rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .horizontal-line {
-    width: 43rem;
-    margin-left: 15rem;
-  }
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 992px) {
   .horizontal-line {
-    width: 50%;
-    margin-left: 25%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width: 768px) {
   .horizontal-line {
     width: 70%;
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -91,7 +79,7 @@
   transition: all 0.2s ease;
   border: none;
   background: none;
-  font-family: 'SplineSansRegular'!important;
+  font-family: 'SplineSansRegular' !important;
 }
 
 .cta:before {
@@ -150,6 +138,7 @@
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
+
 .cta:hover:before {
   width: 100%;
   background: #ea9b3a;
@@ -170,8 +159,10 @@
 
 .image-card {
   background: #ea9b3a;
-  height: 300px; /* Set the desired height */
-  object-fit: cover; /* Ensure the image covers the container */
+  height: 300px;
+  /* Set the desired height */
+  object-fit: cover;
+  /* Ensure the image covers the container */
 }
 
 .card-image-overlay {
