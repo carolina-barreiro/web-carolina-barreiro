@@ -4,19 +4,53 @@
 }
 
 .dark-mode-background input[type="text"],
+.dark-mode-background input[type="email"],
 .dark-mode-background textarea {
     background-color: #333333;
     color: #f7f7f7;
 }
 
 .dark-mode-background input[type="text"]::placeholder,
+.dark-mode-background input[type="email"]::placeholder,
 .dark-mode-background textarea::placeholder {
+    color: #a9a9a9;
+}
+
+.dark-mode-background input[type="text"]:focus,
+.dark-mode-background input[type="email"]:focus,
+.dark-mode-background textarea:focus {
+    background-color: #333333;
+    color: #a9a9a9;
+}
+
+.dark-mode-background input[type="text"]:active,
+.dark-mode-background input[type="email"]:active,
+.dark-mode-background textarea:active {
+    background-color: #333333;
     color: #a9a9a9;
 }
 
 .dark-mode-background #contact_h2 {
     color: #333333;
 }
+
+.dark-mode-background input:-webkit-autofill,
+.dark-mode-background input:-webkit-autofill:focus {
+    transition: #333333 600000s 0s, color 600000s 0s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.form-control.error {
+    border-color: "red";
+    font-size: 1em;
+  }
+
+
+
 
 #contact-section {
     background-image: linear-gradient(to top, #eb870e, #ee9125, #f19b37, #f4a547, #f7ae56, #f9b766, #fbbf77, #fdc887, #fed29c, #ffdcb2, #ffe6c8, #fff0de);
@@ -27,15 +61,6 @@
     padding-top: 2rem;
 }
 
-/*
-.contact-image {
-    max-width: '100%';
-    max-height: auto;
-    max-width: 95%;
-    max-height: 95%;
-    margin: 0;
-    padding: 0;
-}*/
 .contact-image {
     width: 130%;
     height: 100%;
@@ -98,13 +123,6 @@ form.border-right {
     padding-right: 5rem !important;
 }
 
-/*
-@media (max-width: 991.98px) {
-    form.border-right {
-        padding-right: 0 !important;
-        border-right: none !important;
-    }
-}*/
 
 @media (max-width: 992px) {
     .custom-container {

@@ -8,29 +8,57 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
-import BtnBlackSimple from './BtnBlackSimple';
+import FormContact from '../API';
 
-export function FormContact() {
+
+/*
+export function FormContact(props) {
     return (
-        <>
-            <Form>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-            </Form>
-
-        </>
+        <form className="pr-2 mb-3 mt-5 font-spline" id="contactForm" name="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e687b782-0101-4f5a-9a1e-da188bf02d22" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style={{display: "none"}} />
+            <Row className="mb-3">
+                <Col md={6} className="form-group">
+                    <input type="text" required className="form-control" name="fname" id="fname" placeholder="First name" />
+                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide your first name.
+              </div>
+                </Col>
+                <Col md={6} className="form-group">
+                    <input type="text" required className="form-control" name="lname" id="lname" placeholder="Last name" />
+                </Col>
+            </Row>
+            <Row className="mb-3">
+                <Col md={12} className="form-group">
+                    <input type="text" required className="form-control" name="email" id="email" placeholder="Email" />
+                </Col>
+            </Row>
+            <Row className="mb-3">
+                <Col md={12} required className="form-group">
+                    <textarea
+                        className="form-control"
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="5"
+                        placeholder="Write your message"
+                    ></textarea>
+                </Col>
+            </Row>
+            <Row className="mb-3">
+                <Col md={12} >
+                    <BtnBlackSimple
+                        id="btn-send-message"
+                        txt='Send Message'
+                        type="submit"
+                        noturnView={props.noturnView}
+                    />
+                </Col>
+            </Row>
+        </form>
     );
-}
+}*/
 
 function Contact(props) {
     return (
@@ -56,43 +84,8 @@ function Contact(props) {
                                             <Image src="/images/contact_me.png" className="contact-image" />
                                         </Col>
                                         <Col lg={7} className="mb-5 mb-lg-0">
-                                            <form className="pr-2 mb-3 mt-5 font-spline" method="post" id="contactForm" name="contactForm">
-                                                <Row className="mb-3">
-                                                    <Col md={6} className="form-group">
-                                                        <input type="text" className="form-control" name="fname" id="fname" placeholder="First name" />
-                                                    </Col>
-                                                    <Col md={6} className="form-group">
-                                                        <input type="text" className="form-control" name="lname" id="lname" placeholder="Last name" />
-                                                    </Col>
-                                                </Row>
-                                                <Row className="mb-3">
-                                                    <Col md={12} className="form-group">
-                                                        <input type="text" className="form-control" name="email" id="email" placeholder="Email" />
-                                                    </Col>
-                                                </Row>
-                                                <Row className="mb-3">
-                                                    <Col md={12} className="form-group">
-                                                        <textarea
-                                                            className="form-control"
-                                                            name="message"
-                                                            id="message"
-                                                            cols="30"
-                                                            rows="5"
-                                                            placeholder="Write your message"
-                                                        ></textarea>
-                                                    </Col>
-                                                </Row>
-                                                <Row className="mb-3">
-                                                    <Col md={12} >
-                                                        <BtnBlackSimple
-                                                            id="btn-send-message"
-                                                            txt='Send Message'
-                                                            type="submit"
-                                                            noturnView={props.noturnView}
-                                                        />
-                                                    </Col>
-                                                </Row>
-                                            </form>
+                                            <FormContact
+                                                noturnView={props.noturnView} />
                                             <div id="form-message-warning" className="mt-4"></div>
                                             <div id="form-message-success">Your message was sent, thank you!</div>
                                         </Col>
