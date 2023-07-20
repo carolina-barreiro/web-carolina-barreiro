@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/web-portfolio-cb/static/css/main.b6768171.css",
+    "main.js": "/web-portfolio-cb/static/js/main.8b258491.js",
+    "static/media/CV_Carolina_Barreiro_en.pdf": "/web-portfolio-cb/static/media/CV_Carolina_Barreiro_en.b525f44395840bacc5c8.pdf",
+    "static/media/GothamBook.ttf": "/web-portfolio-cb/static/media/GothamBook.58fb9151c57e59668f17.ttf",
+    "static/media/GothamMedium.ttf": "/web-portfolio-cb/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
+    "static/media/SplineSans-Regular.ttf": "/web-portfolio-cb/static/media/SplineSans-Regular.23463355437e3edaa759.ttf",
+    "static/media/SplineSans-Medium.ttf": "/web-portfolio-cb/static/media/SplineSans-Medium.caf30f92c7d6c0ee02e8.ttf",
+    "static/media/Outfit-Regular.ttf": "/web-portfolio-cb/static/media/Outfit-Regular.e853df41b41bc9489a8b.ttf",
+    "index.html": "/web-portfolio-cb/index.html",
+    "main.b6768171.css.map": "/web-portfolio-cb/static/css/main.b6768171.css.map",
+    "main.8b258491.js.map": "/web-portfolio-cb/static/js/main.8b258491.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6768171.css",
+    "static/js/main.8b258491.js"
+  ]
+}
