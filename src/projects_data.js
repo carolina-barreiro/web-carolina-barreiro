@@ -1,6 +1,7 @@
 import Image1 from "./images/todolist.png";
 import Image2 from "./images/quizreact.png";
 import Image3 from "./images/quizreactts.png";
+import Image4 from "./images/webportfolio.png";
 
 export const projectsData = [
     {
@@ -53,6 +54,26 @@ export const projectsData = [
         {
             id: 2,
             tech: 'Typescript'
+        }]
+    },
+    {
+        id: 3,
+        title: 'This website',
+        urlGit: 'https://github.com/carolina-barreiro/web-carolina-barreiro',
+        urlWeb: 'https://carolina-barreiro.github.io/web-carolina-barreiro//',
+        srcImage: Image4,
+        description:'My own website to showcase projects and tell more about myself, I used an API to facilitate the contact with me.',
+        technologies: [{
+            id: 0,
+            tech: 'React'
+        },
+        {
+            id: 1,
+            tech: 'Bootstrap'
+        },
+        {
+            id: 3,
+            tech: 'Web3forms'
         }]
     }
 ]
