@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import BtnBlackSimple from './SmallComponents';
 import { Link } from 'react-scroll';
-import ImageHero from "../images/vector-person-computer.png";
+import ImageHero from "../images/vectorpersoncomputer.png";
 
 
 function HeroSection(props) {

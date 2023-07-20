@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import FormContact from '../API';
-import ImageContact from "../images/contact_me.png";
+import ImageContact from "../images/contactme.png";
 
 
 function Contact(props) {

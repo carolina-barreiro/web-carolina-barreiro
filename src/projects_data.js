@@ -1,6 +1,6 @@
-import Image1 from "./images/to-do-list.png";
-import Image2 from "./images/quiz_react.png";
-import Image3 from "./images/quiz_react_ts.png";
+import Image1 from "./images/todolist.png";
+import Image2 from "./images/quizreact.png";
+import Image3 from "./images/quizreactts.png";
 
 export const projectsData = [
     {
