@@ -60,7 +60,7 @@ export const projectsData = [
         id: 3,
         title: 'This website',
         urlGit: 'https://github.com/carolina-barreiro/web-carolina-barreiro',
-        urlWeb: 'https://carolina-barreiro.github.io/web-carolina-barreiro//',
+        urlWeb: 'https://carolina-barreiro.github.io/web-carolina-barreiro/',
         srcImage: Image4,
         description:'My own website to showcase projects and tell more about myself, I used an API to facilitate the contact with me.',
         technologies: [{
