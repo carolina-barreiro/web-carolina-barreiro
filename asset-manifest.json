@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/web-carolina-barreiro/static/css/main.ab57d467.css",
-    "main.js": "/web-carolina-barreiro/static/js/main.b4b81430.js",
+    "main.css": "/web-carolina-barreiro/static/css/main.99d5debf.css",
+    "main.js": "/web-carolina-barreiro/static/js/main.379bcf00.js",
     "static/media/quizreact.png": "/web-carolina-barreiro/static/media/quizreact.26af3c5781e5a3a09815.png",
     "static/media/vectorpersoncomputer.png": "/web-carolina-barreiro/static/media/vectorpersoncomputer.62778840b28e77c53722.png",
     "static/media/todolist.png": "/web-carolina-barreiro/static/media/todolist.3525525ead6170b30759.png",
     "static/media/CV_Carolina_Barreiro_en.pdf": "/web-carolina-barreiro/static/media/CV_Carolina_Barreiro_en.b525f44395840bacc5c8.pdf",
+    "static/media/webportfolio.png": "/web-carolina-barreiro/static/media/webportfolio.ed7a99726f134bfad932.png",
     "static/media/quizreactts.png": "/web-carolina-barreiro/static/media/quizreactts.70561b8d55de71b5c986.png",
     "static/media/GothamBook.ttf": "/web-carolina-barreiro/static/media/GothamBook.58fb9151c57e59668f17.ttf",
     "static/media/GothamMedium.ttf": "/web-carolina-barreiro/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
@@ -14,11 +15,11 @@
     "static/media/Outfit-Regular.ttf": "/web-carolina-barreiro/static/media/Outfit-Regular.e853df41b41bc9489a8b.ttf",
     "static/media/contactme.png": "/web-carolina-barreiro/static/media/contactme.66b06925a8d2879a6984.png",
     "index.html": "/web-carolina-barreiro/index.html",
-    "main.ab57d467.css.map": "/web-carolina-barreiro/static/css/main.ab57d467.css.map",
-    "main.b4b81430.js.map": "/web-carolina-barreiro/static/js/main.b4b81430.js.map"
+    "main.99d5debf.css.map": "/web-carolina-barreiro/static/css/main.99d5debf.css.map",
+    "main.379bcf00.js.map": "/web-carolina-barreiro/static/js/main.379bcf00.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab57d467.css",
-    "static/js/main.b4b81430.js"
+    "static/css/main.99d5debf.css",
+    "static/js/main.379bcf00.js"
   ]
 }
