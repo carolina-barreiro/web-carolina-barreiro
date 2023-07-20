@@ -160,9 +160,7 @@
 .image-card {
   background: #ea9b3a;
   height: 300px;
-  /* Set the desired height */
   object-fit: cover;
-  /* Ensure the image covers the container */
 }
 
 .card-image-overlay {

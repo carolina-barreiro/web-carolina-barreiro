@@ -11,8 +11,6 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import { projectsData } from '../projects_data.js';
 import { Github } from 'react-bootstrap-icons';
 
-
-
 export function BtnGithub(props) {
     const renderTooltip = (props) => (
         <Tooltip id="button-tooltip" {...props}>
@@ -93,12 +91,3 @@ function Projects(props) {
 
 export default Projects;
 
-
-/* <Button
-                                        href={project.urlGit}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="github-icon btn-github"
-                                    >
-                                        <Github className="align-top" />
-                                    </Button> */

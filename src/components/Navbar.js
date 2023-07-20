@@ -25,13 +25,13 @@ function NavbarTop(props) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className={`${props.noturnView ? 'dark-mode-navbar' : ''}`}>
           <Nav className="ms-auto">
-          <Nav.Link as={Link} to="projects" smooth={true} duration={50} spy={true} offset={-70}>
+            <Nav.Link as={Link} to="projects" smooth={true} duration={50} spy={true} offset={-70} style={{ cursor: "pointer" }}>
               Projects
-            </Nav.Link>            
-            <Nav.Link as={Link} to="about" smooth={true} duration={50} spy={true} offset={-70}>
+            </Nav.Link>
+            <Nav.Link as={Link} to="about" smooth={true} duration={50} spy={true} offset={-70} style={{ cursor: "pointer" }}>
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="contact" smooth={true} duration={50} spy={true} offset={-70}>
+            <Nav.Link as={Link} to="contact" smooth={true} duration={50} spy={true} offset={-70} style={{ cursor: "pointer" }}>
               Contact
             </Nav.Link>
             {props.noturnView ? (

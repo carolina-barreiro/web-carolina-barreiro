@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import NavbarTop from './components/Navbar';
 import HeroSection from './components/HeroSection';
@@ -39,26 +38,3 @@ function App() {
 }
 
 export default App;
-/* <>
-      <Router >
-        <div className={`${noturnView ? 'dark-mode-background' : ''}`}>
-          <NavbarTop
-            noturnView={noturnView}
-            setNoturnView={setNoturnView} />
-          <HeroSection
-            noturnView={noturnView} />
-          <Projects
-            noturnView={noturnView} />
-          <About
-            noturnView={noturnView} />
-          <Contact
-            noturnView={noturnView} />
-          <Footer
-            noturnView={noturnView}
-            setNoturnView={setNoturnView} />
-        </div>
-        <Routes>
-          <Route path='/' exact />
-        </Routes>
-      </Router>
-    </> */

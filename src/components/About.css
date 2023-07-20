@@ -6,14 +6,13 @@
 
 .narrow-column {
     flex-basis: 10%;
-    max-width: 10%; 
-  }
-  
+    max-width: 10%;
+}
 
-#col1{
+#col1 {
     padding: 0;
 }
 
-#col2{
+#col2 {
     padding-right: 0;
 }

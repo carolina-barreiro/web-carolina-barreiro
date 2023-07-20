@@ -52,9 +52,3 @@ function Contact(props) {
 }
 
 export default Contact;
-
-/*
-            <Button type="submit"
-            value="Send Message"
-            className="btn-custom font-light  py-2 px-4">Contact me</Button>
-   */

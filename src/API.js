@@ -68,7 +68,7 @@ export default function FormContact(props) {
                     fontFamily: "SplineSansRegular"
                   }),
                 position: "bottom-center",
-                autoClose: 3000,
+                autoClose: 2000,
                 hideProgressBar: true,
                 closeButton: false,
                 closeOnClick: true,

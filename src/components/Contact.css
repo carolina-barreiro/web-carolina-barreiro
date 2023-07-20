@@ -47,10 +47,7 @@ input:-webkit-autofill:focus {
 .form-control.error {
     border-color: "red";
     font-size: 1em;
-  }
-
-
-
+}
 
 #contact-section {
     background-image: linear-gradient(to top, #eb870e, #ee9125, #f19b37, #f4a547, #f7ae56, #f9b766, #fbbf77, #fdc887, #fed29c, #ffdcb2, #ffe6c8, #fff0de);
@@ -155,84 +152,25 @@ form.border-right {
 
 }
 
-label.error {
-    font-size: 12px;
-    color: red;
-}
-
-#message {
-    resize: vertical;
-}
-
-#form-message-warning,
-#form-message-success {
-    display: none;
-}
-
-#form-message-warning {
-    color: #B90B0B;
-}
-
-#form-message-success {
-    color: #55A44E;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 .card-contact {
     justify-content: center;
     align-self: center;
     border: none;
 }
 
-
 input.btn-custom.font-spline:hover {
     background: #2c2c2c !important;
     outline: none;
     color: #2c2c2c;
-  }
-  
-  input.btn-custom.font-spline.dark-mode-background:hover {
+}
+
+input.btn-custom.font-spline.dark-mode-background:hover {
     background: white !important;
     outline: none;
     color: white;
-  }
+}
 
-  /*input.btn-custom.font-spline::after {
-    content: "";
-    background: white;
-    color: #2c2c2c;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-  }
-  
-  input.btn-custom.font-spline.dark-mode-background::after {
-    content: "";
-    background: #626262;
-    color: #eeeff1;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-  }
-
-  input.btn-custom.font-spline:hover::after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  */
-  .btn-custom {
+.btn-custom {
     padding: 0.5em;
     margin: 0.5em;
     background: #2c2c2c;
@@ -244,9 +182,9 @@ input.btn-custom.font-spline:hover {
     position: relative;
     z-index: 1;
     overflow: hidden;
-  }
-  
-  .btn-custom.dark-mode-background {
+}
+
+.btn-custom.dark-mode-background {
     padding: 0.5em;
     margin: 0.5em;
     background: #eeeff1;
@@ -258,21 +196,21 @@ input.btn-custom.font-spline:hover {
     position: relative;
     z-index: 1;
     overflow: hidden;
-  }
-  
-  .btn-custom:hover {
+}
+
+.btn-custom:hover {
     background: #2c2c2c !important;
     outline: none;
     color: #2c2c2c;
-  }
-  
-  .btn-custom.dark-mode-background:hover {
+}
+
+.btn-custom.dark-mode-background:hover {
     background: white !important;
     outline: none;
     color: white;
-  }
-  
-  .btn-custom::after {
+}
+
+.btn-custom::after {
     content: "";
     background: white;
     color: #2c2c2c;
@@ -284,9 +222,9 @@ input.btn-custom.font-spline:hover {
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
     transition: all 0.5s;
-  }
-  
-  .btn-custom.dark-mode-background::after {
+}
+
+.btn-custom.dark-mode-background::after {
     content: "";
     background: #626262;
     color: #eeeff1;
@@ -298,14 +236,14 @@ input.btn-custom.font-spline:hover {
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
     transition: all 0.5s;
-  }
-  
-  .btn-custom:hover::after {
+}
+
+.btn-custom:hover::after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  
-  .btn-custom.font-spline {
+}
+
+.btn-custom.font-spline {
     font-family: 'SplineSansRegular';
-  }
+}

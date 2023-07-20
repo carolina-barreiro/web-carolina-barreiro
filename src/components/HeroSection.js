@@ -11,7 +11,6 @@ import ImageHero from "../images/vectorpersoncomputer.png";
 
 
 function HeroSection(props) {
-
     return (
         <div className={`${props.noturnView ? 'dark-mode-background' : ''}`}>
             <Container fluid="md">
@@ -36,11 +35,8 @@ function HeroSection(props) {
                     </Col>
                 </Row>
             </Container>
-
-
         </div>
     );
-
 }
 
 export default HeroSection;
