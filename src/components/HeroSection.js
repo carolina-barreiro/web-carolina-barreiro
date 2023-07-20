@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import BtnBlackSimple from './SmallComponents';
 import { Link } from 'react-scroll';
+import ImageHero from "../images/vector-person-computer.png";
+
 
 function HeroSection(props) {
 
@@ -16,7 +18,7 @@ function HeroSection(props) {
                 <Row className="justify-content-md-center" id="landingPage">
                     <Col className="align-items-center justify-content-center order-md-last" md={6} id="column2">
                         <div className="image-container">
-                            <Image src="/images/vector-person-computer.png" className="hero-image" />
+                            <Image src={ImageHero} className="hero-image" />
 
                         </div></Col>
                     <Col className="align-items-center justify-content-center order-md-first" md={6} id="column1">
