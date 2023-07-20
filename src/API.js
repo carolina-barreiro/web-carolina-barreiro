@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.min.css";
+import { css } from "glamor";
 import './components/Contact.css';
-import './components/BtnBlackSimple.css'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 export default function FormContact(props) {
-    const [result, setResult] = React.useState("");
+    const [result, setResult] = useState("");
+    const [showResult, setShowResult] = useState(false);
     const [fnameError, setfNameError] = useState("");
     const [lnameError, setlNameError] = useState("");
     const [emailError, setEmailError] = useState("");
@@ -13,7 +17,7 @@ export default function FormContact(props) {
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        
+
         const formData = new FormData(event.target);
 
         // Validate the form fields
@@ -55,11 +59,38 @@ export default function FormContact(props) {
 
         if (res.success) {
             console.log("Success", res);
-            setResult(res.message);
+            //setResult(res.message);
+            setResult('');
+            toast('Message sent sucessfully!', {
+                className: css({
+                    background: "#bdbdbd !important",
+                    color: "white !important",
+                    fontFamily: "SplineSansRegular"
+                  }),
+                position: "bottom-center",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeButton: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+            event.target.reset();
+            setfNameError("");
+            setlNameError("");
+            setEmailError("");
+            setMessageError("");
         } else {
             console.log("Error", res);
             setResult(res.message);
         }
+
+
+        setShowResult(true);
+        setTimeout(() => {
+            setShowResult(false);
+        }, 2500);
     };
 
 
@@ -69,13 +100,13 @@ export default function FormContact(props) {
                 <form className="pr-2 mb-3 mt-5 font-spline" onSubmit={onSubmit} noValidate>
                     <Row className="mb-3">
                         <Col md={6} className="form-group">
-                            <input type="text" required  className={`form-control ${fnameError ? "error" : ""}`} name="fname" id="fname" placeholder="Name" />
+                            <input type="text" required className={`form-control ${fnameError ? "error" : ""}`} name="fname" id="fname" placeholder="Name" />
                             {fnameError && <div className="error-message">{fnameError}</div>}
                         </Col>
                         <Col md={6} className="form-group">
-                    <input type="text" required className="form-control" name="lname" id="lname" placeholder="Last name" />
-                    {lnameError && <div className="error-message">{lnameError}</div>}
-                </Col>
+                            <input type="text" required className="form-control" name="lname" id="lname" placeholder="Last name" />
+                            {lnameError && <div className="error-message">{lnameError}</div>}
+                        </Col>
                     </Row>
                     <Row className="mb-3">
                         <Col md={12} className="form-group">
@@ -99,57 +130,24 @@ export default function FormContact(props) {
                     </Row>
                     <Row className="mb-3">
                         <Col md={12} >
-                            <input className={`btn-custom font-spline ${props.noturnView ? 'dark-mode-background' : ''}`} type="submit" value="Send Message" />
+                            <button className={`btn-custom font-spline ${props.noturnView ? 'dark-mode-background' : ''}`}
+                                type="submit"> Send Message</button>
                         </Col>
                     </Row>
                 </form>
-                <span className="font-spline">{result}</span>
+                {showResult && <span className="font-spline">{result}</span>}
             </div>
+            <ToastContainer
+                    position="bottom-center"
+                    autoClose={3000}
+                    hideProgressBar
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                />
         </>
     );
 }
-
-
-/*
- <form className="pr-2 mb-3 mt-5 font-spline" id="contactForm" name="contactForm" onSubmit={onSubmit}>
-            <Row className="mb-3">
-                <Col md={6} className="form-group">
-                    <input type="text" required className="form-control" name="fname" id="fname" placeholder="First name" />
-                    <div className="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-                Please provide your first name.
-              </div>
-                </Col>
-                <Col md={6} className="form-group">
-                    <input type="text" required className="form-control" name="lname" id="lname" placeholder="Last name" />
-                </Col>
-            </Row>
-            <Row className="mb-3">
-                <Col md={12} className="form-group">
-                    <input type="text" required className="form-control" name="email" id="email" placeholder="Email" />
-                </Col>
-            </Row>
-            <Row className="mb-3">
-                <Col md={12} required className="form-group">
-                    <textarea
-                        className="form-control"
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="5"
-                        placeholder="Write your message"
-                    ></textarea>
-                </Col>
-            </Row>
-            <Row className="mb-3">
-                <Col md={12} >
-                    <BtnBlackSimple
-                        id="btn-send-message"
-                        txt='Send Message'
-                        type="submit"
-                        noturnView={props.noturnView}
-                    />
-                </Col>
-            </Row>
-        </form>
-        <span>{result}</span>
-*/

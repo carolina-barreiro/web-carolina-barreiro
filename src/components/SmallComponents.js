@@ -1,4 +1,4 @@
-import './BtnBlackSimple.css';
+import './SmallComponents.css';
 import CV_Carolina_Barreiro_en from '../assets/CV_Carolina_Barreiro_en.pdf';
 import Button from 'react-bootstrap/Button';
 
