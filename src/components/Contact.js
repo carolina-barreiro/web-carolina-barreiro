@@ -37,8 +37,6 @@ function Contact(props) {
                                         <Col lg={7} className="mb-5 mb-lg-0">
                                             <FormContact
                                                 noturnView={props.noturnView} />
-                                            <div id="form-message-warning" className="mt-4"></div>
-                                            <div id="form-message-success">Your message was sent, thank you!</div>
                                         </Col>
                                     </Row>
                                 </Col>
