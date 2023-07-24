@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-carolina-barreiro/static/css/main.99d5debf.css",
-    "main.js": "/web-carolina-barreiro/static/js/main.379bcf00.js",
+    "main.css": "/web-carolina-barreiro/static/css/main.593a754d.css",
+    "main.js": "/web-carolina-barreiro/static/js/main.07ab026b.js",
     "static/media/quizreact.png": "/web-carolina-barreiro/static/media/quizreact.26af3c5781e5a3a09815.png",
     "static/media/vectorpersoncomputer.png": "/web-carolina-barreiro/static/media/vectorpersoncomputer.62778840b28e77c53722.png",
     "static/media/todolist.png": "/web-carolina-barreiro/static/media/todolist.3525525ead6170b30759.png",
@@ -15,11 +15,11 @@
     "static/media/Outfit-Regular.ttf": "/web-carolina-barreiro/static/media/Outfit-Regular.e853df41b41bc9489a8b.ttf",
     "static/media/contactme.png": "/web-carolina-barreiro/static/media/contactme.66b06925a8d2879a6984.png",
     "index.html": "/web-carolina-barreiro/index.html",
-    "main.99d5debf.css.map": "/web-carolina-barreiro/static/css/main.99d5debf.css.map",
-    "main.379bcf00.js.map": "/web-carolina-barreiro/static/js/main.379bcf00.js.map"
+    "main.593a754d.css.map": "/web-carolina-barreiro/static/css/main.593a754d.css.map",
+    "main.07ab026b.js.map": "/web-carolina-barreiro/static/js/main.07ab026b.js.map"
   },
   "entrypoints": [
-    "static/css/main.99d5debf.css",
-    "static/js/main.379bcf00.js"
+    "static/css/main.593a754d.css",
+    "static/js/main.07ab026b.js"
   ]
 }
