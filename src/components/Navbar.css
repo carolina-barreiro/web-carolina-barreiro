@@ -1,5 +1,5 @@
 .title-navbar {
-  color: #EA9B3A;
+  color: #ea9b3a;
   font-weight: bold;
 }
 
@@ -37,6 +37,9 @@
   color: var(--bs-navbar-link-color);
 }
 
+.navbar-nav .nav-link:hover {
+  color: #ea9b3a;
+}
 
 @media (max-width: 991px) {
   #responsive-navbar-nav {

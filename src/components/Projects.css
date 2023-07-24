@@ -13,11 +13,18 @@
   margin-left: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  #card-line2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .horizontal-line {
   position: relative;
   width: 100%;
   height: 3px;
-  background-color: #EA9B3A;
+  background-color: #ea9b3a;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -79,7 +86,7 @@
   transition: all 0.2s ease;
   border: none;
   background: none;
-  font-family: 'SplineSansRegular' !important;
+  font-family: "SplineSansRegular" !important;
 }
 
 .cta:before {
@@ -119,7 +126,6 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke: #262626;
-  ;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -133,7 +139,6 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke: #f7f7f7;
-  ;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
