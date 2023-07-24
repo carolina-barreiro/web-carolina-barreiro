@@ -10,6 +10,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  min-width: 20%;
 }
 
 .btn-custom.dark-mode-background {
@@ -73,5 +74,5 @@
 }
 
 .btn-custom.font-spline {
-  font-family: 'SplineSansRegular';
+  font-family: "SplineSansRegular";
 }
